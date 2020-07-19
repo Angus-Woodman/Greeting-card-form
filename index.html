@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport:" content="width=device-width">
+    <title>Forms & API's</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="my-form">
+      <label for="greeting">Name:</label>
+      <input type="text" id="greeting" placeholder="Bob">
+
+      <label for="eventType"></label>
+      <select id="eventType">
+        <option value="Birthday">Birthday</option>
+        <option value="Christmas">Christmas</option>
+        <option value="Thank You Letter">Thank You Letter</option>
+        <option value="Anniversary">Anniversary</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <input type="text" id="message" placeholder="Message">
+
+      <input type="submit" value="Send">
+    </form>
+
+    <div class='cards'>
+      <div class='card'>
+        <div class='front face'>
+          <img id="cardImage" src='http://placehold.it/300x300&text= Greeting Card image'/>
+        </div>
+        <div class="back face">
+          <section id="container">
+            <h1 id="userName"> </h1>
+            <h2 id="occasionGreeting"></h2>
+            <p id="greetingMessage"></p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
